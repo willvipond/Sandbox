@@ -1,0 +1,32 @@
+/*  the whole page is centered
+    since everything is within the div 'container' has the auto margins*/
+
+#container {
+    width:     800px;
+    background-color: lightgreen;
+    margin-left: auto;
+    margin-right: auto;
+    color: ;
+}
+
+#header {
+    background-color:#lightgreen;
+    text-align: center;
+}
+
+#menu {
+    width:     500px;
+    background-color:  lightyellow;
+    margin-left:   20px;
+}
+
+/*This is an extra style element that will change all 'a href' tags to the values below*/
+a {
+    font-size:  30px;
+    text-decoration: none;
+    color: #cf4f70;
+}
+a:hover {
+    color: blue;
+    text-decoration: none;
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Week Three Subject Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Link to a downloaded twitter bootstrap cascading style sheet full of many features-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- This is an internal style block of code to override some of the bootstrap style values-->
+    <style type="text/css">
+        .navbar .nav > li > a {
+            color: #84B1DB; /*nav color*/
+            text-shadow: none;
+            border-radius: 10px;
+        }
+        .navbar .nav > li > a:hover {
+            color:black;
+            background: #A2A2A2;
+        }
+        .myclass {
+            color: #FF0000;
+            background-color:  #lightyellow;
+        }
+         body {
+            background-color: green;
+            background-image: url(1square.gif);
+        }
+                .row1Styles {
+            background-color: #fcc7b5; 
+            min-height: 200px;
+        }
+        .row2Styles {
+            background-color: lavender; 
+            min-height: 200px;
+        }
+        .col1Styles {
+            background-color: #lightyellow 
+            height: 180px;
+            border-width: 2px; border-color: black; border-style: solid;
+        }
+        .col2Styles {
+            background-color: gray; 
+            height: 180px;
+            border-width: 2px; border-color: black; border-style: solid;
+            margin-left: 80px;
+        }
+    </style>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--  The container class from bootstrap is a width of 1000 pixels. 
+  It has all the paddi/ng other values to help make the content look its best in many different browsers.-->
+  <div class="container">
+
+
+    <!--  navbar class has many types, this is the first one you can use. we will explore other in class or video lesson-->
+    <nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="http://seattleacademy.org/">Seattle Academy</a>
+            <ul class="nav navbar-nav">
+                <li><a href="../lesson1a.html">first page</a></li>
+                <li><a href="../weekOne/lesson1a.html">first page</a></li>
+                <li><a href="../weekOne/lesson2.html">second page</a></li>
+                <li><a href="../weekTwo/lesson3.html">Third page</a></li>
+                <li class="active"><a href="lesson4.html">Fourth page</a>
+</div></li>
+            </ul>
+        </div>
+    </nav>
+    <!--     An example of the many classes (another identification element) that are inside the bootstrap library-->
+    <div class="alert alert-success">
+        This site is under development!
+    </div>
+    <h1>Will's website</h1>
+    <!--  You can do columns by putting spans inside of rows. -->
+    <div class="row">
+        <div class="col-sm-3">
+            <p>This is span 1</p>
+        </div>
+        <div class="col-sm-9 myclass">
+            <p>This is span 2 <br>
+                </p>
+            </div>
+        </div>  <div class="row row1Styles">
+        <div class="col-sm-6 col1Styles">
+            <p>Put slideshow here</p><div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="la.jpg" alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img src="chicago.jpg" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="ny.jpg" alt="New York">
+    </div>
+  </div>
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+        </div>  <!-- closing column -->
+        <div class="col-sm-5 col2Styles">
+      
+        </div> <!-- closing column -->
+    </div>  <!-- closing row -->
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+            <img src="1square.gif" width="500" height="350" /><br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+    <div class="row row2Styles">
+        <div class="col-sm-6 col1Styles">
+            <p>Find any other bootstrap feature and paste it here</p>
+               <h2>Th-list Glyph</h2>
+      <p>Th-list icon: <span class="glyphicon glyphicon-th-list"></span></p>    
+      <p>Th-list icon as a link:
+        <a href="#">
+          <span class="glyphicon glyphicon-th-list"></span>
+        </a>
+      </p>
+      <p>Th-list icon on a button:
+        <button type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-th-list"></span> Th List
+        </button>
+      </p>
+      <p>Th-list icon on a styled link button:
+        <a href="#" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-th-list"></span> Th List
+        </a>
+      </p> 
+        </div>  <!-- closing column -->
+        <div class="col-sm-5 col2Styles">
+            <p>Find any other bootstrap feature and paste it here</p>
+               <h2>Th-list Glyph</h2>
+      <p>Th-list icon: <span class="glyphicon glyphicon-th-list"></span></p>    
+      <p>Th-list icon as a link:
+        <a href="#">
+          <span class="glyphicon glyphicon-th-list"></span>
+        </a>
+      </p>
+      <p>Th-list icon on a button:
+        <button type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-th-list"></span> Th List
+        </button>
+      </p>
+      <p>Th-list icon on a styled link button:
+        <a href="#" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-th-list"></span> Th List
+        </a>
+      </p> 
+        </div>  <!-- closing column -->
+    </div>  <!-- closing row -->
+</body>
+</html>

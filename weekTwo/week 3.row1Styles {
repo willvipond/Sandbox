@@ -1,0 +1,37 @@
+    .row1Styles {
+            background-color: #fcc7b5; 
+            min-height: 200px;
+        }
+        .row2Styles {
+            background-color: lavender; 
+            min-height: 200px;
+        }
+        .col1Styles {
+            background-color: #f99286; 
+            height: 180px;
+            border-width: 2px; border-color: black; border-style: solid;
+        }
+        .col2Styles {
+            background-color: gray; 
+            height: 180px;
+            border-width: 2px; border-color: black; border-style: solid;
+            margin-left: 80px;
+        }
+
+         <div class="row row1Styles">
+        <div class="col-sm-6 col1Styles">
+            <p>Put slideshow here</p>
+        </div>  <!-- closing column -->
+        <div class="col-sm-5 col2Styles">
+            <p>Put model button here</p>
+        </div> <!-- closing column -->
+    </div>  <!-- closing row -->
+
+    <div class="row row2Styles">
+        <div class="col-sm-6 col1Styles">
+            <p>Find any other bootstrap feature and paste it here</p>
+        </div>  <!-- closing column -->
+        <div class="col-sm-5 col2Styles">
+            <p>Find any other bootstrap feature and paste it here</p>
+        </div>  <!-- closing column -->
+    </div>  <!-- closing row -->
